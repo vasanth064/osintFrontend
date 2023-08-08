@@ -10,7 +10,7 @@ const Results = ({ results }) => {
     results &&
       setTimeout(() => {
         setLoaded(false);
-      }, 1000);
+      }, 5000);
   });
   return (
     <>

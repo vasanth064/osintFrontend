@@ -13,7 +13,13 @@ const Home = () => {
     for (const [key, value] of form) {
       formDataObj[key] = value ? true : false;
     }
-    setResults(formDataObj);
+    console.log(formDataObj);
+    if (formDataObj?.email || formDataObj?.mobile || formDataObj?.username) {
+      setResults(formDataObj);
+    } else {
+      alert('Please enter atleast one field to investigate');
+      setResults(false);
+    }
   };
   return (
     <section id='form'>
@@ -44,8 +50,7 @@ const Home = () => {
         />
         <input type='submit' value='Investigate 🔍' />
       </form>
-
-      <Results results={results} />
+      {results && <Results results={results} />}
     </section>
   );
 };

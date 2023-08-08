@@ -41,8 +41,15 @@ export const userNameEdgesData = [
 ];
 
 export const summaryEdgesData = [
-  { id: 'A-1', source: 'A', target: 'A-1', animated: true },
-  { id: 'A-2', source: 'A', target: 'A-2', animated: true },
-  { id: 'A-3', source: 'A', target: 'A-3', animated: true },
+  { id: 'A', source: 'A-1', target: 'A', animated: true },
+  { id: 'A', source: 'A-2', target: 'A', animated: true },
+  { id: 'A-10', source: 'A-10', target: 'A-1', animated: true },
+  { id: 'A-9', source: 'A-9', target: 'A-1', animated: true },
   { id: 'A-5', source: 'A', target: 'A-5', animated: true },
+  { id: 'A-7', source: 'A-7', target: 'A', animated: true },
+  { id: 'A-8', source: 'A-8', target: 'A', animated: true },
+  { id: 'A-2', source: 'A', target: 'A-2', animated: true },
+  { id: 'A-4', source: 'A', target: 'A-4', animated: true },
+  { id: 'A-3', source: 'A', target: 'A-3', animated: true },
+  { id: 'A-6', source: 'A', target: 'A-6', animated: true },
 ];
