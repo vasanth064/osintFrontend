@@ -1,19 +1,27 @@
 import { BiUserCircle, BiCurrentLocation } from 'react-icons/bi';
-import { FaMobileAlt, FaAddressBook } from 'react-icons/fa';
-import { MdNotificationsActive } from 'react-icons/md';
+import { BsDatabaseFillExclamation, BsBank } from "react-icons/bs";
+import { FaMobileAlt, FaAddressBook, FaLinkedin, FaReddit, FaInstagram, FaAmazon, FaFacebookSquare, FaMedium } from 'react-icons/fa';
+import { MdNotificationsActive, MdError } from 'react-icons/md';
+import { PiMediumLogoFill } from 'react-icons/pi';
+import { SiBigbasket } from 'react-icons/si';
+import { RiSpam3Fill } from "react-icons/ri";
+import { VscCompassActive } from "react-icons/vsc";
+import { CgUnavailable } from "react-icons/cg";
 import { GiNetworkBars } from 'react-icons/gi';
-import { TbSocial, TbDatabaseExclamation } from 'react-icons/tb';
+import { TbSocial, TbMailExclamation, TbMailCancel } from 'react-icons/tb';
 import { TiTick } from 'react-icons/ti';
 
 import IconNode from '../components/IconNode';
 const vishalNum = 9952802556;
+const vishalMail = "vishal@gmail.com";
+const vishalUserName = "mr.g0d"
 
 export const emailNodes = [
   {
     id: 'A',
     type: 'input',
     data: {
-      label: <IconNode icon={<BiUserCircle />} text={vishalNum} />,
+      label: <IconNode icon={<BiUserCircle />} text={vishalMail} />,
     },
     position: { x: 0, y: 0 },
   },
@@ -46,41 +54,38 @@ export const emailNodes = [
   {
     id: 'A-3',
     data: {
-      label: <IconNode icon={<GiNetworkBars />} text='Airtel' />,
+      label: <IconNode icon={<TbSocial />} text='Social Media' />,
     },
-    position: { x: 400, y: 250 },
+    position: { x: 500, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-4',
     data: {
-      label: <IconNode icon={<TbSocial />} text='User Registered Sites' />,
+      label: <IconNode 
+        icon={<BsDatabaseFillExclamation />} 
+        text={`Data Breach
+               Number Found`} />,
     },
-    position: { x: 600, y: 250 },
+    position: { x: 900, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-5',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Number Not Found' />
+        <IconNode icon={<TbMailExclamation />} text='Blacklisted Mail' />
       ),
     },
-    position: { x: 800, y: 250 },
+    position: { x:1100, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-6',
     data: {
-      label: (
-        <IconNode
-          icon={<TbDatabaseExclamation />}
-          text='Username Found'
-          description='linkedin.com'
-        />
-      ),
+      label: <IconNode icon={<TbMailCancel />} text='Spam reputation' />,
     },
-    position: { x: 200, y: 600 },
+    position: { x: 1300, y: 250 },
     parentNode: 'A',
   },
   {
@@ -88,108 +93,187 @@ export const emailNodes = [
     data: {
       label: (
         <IconNode
-          icon={<TbDatabaseExclamation />}
-          text='Username Found'
-          description='reddit.com'
+          icon={<FaLinkedin />}
+          text='Username Active'
+          description='linkedin.com'
         />
       ),
     },
-    position: { x: 400, y: 600 },
+    position: { x: 300, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-8',
     data: {
-      label: <IconNode icon={<TiTick />} text='Valid' />,
+      label: (
+        <IconNode
+          icon={<SiBigbasket />}
+          text='Username Active'
+          description='bigbasket.com'
+        />
+      ),
     },
-    position: { x: 600, y: 900 },
+    position: { x: 500, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-9',
     data: {
-      label: <IconNode icon={<BiCurrentLocation />} text='Coimbatore' />,
+      label: (
+        <IconNode icon={<FaFacebookSquare />} text='Username - Active' description="facebook.com"/>
+      ),
     },
-    position: { x: 800, y: 900 },
+    position: { x: 700, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-10',
     data: {
-      label: <IconNode icon={<MdNotificationsActive />} text='Active' />,
+      label: (
+        <IconNode icon={<SiBigbasket />} text='2020 Data Breach' />
+      ),
     },
-    position: { x: 1000, y: 900 },
+    position: { x: 900, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-11',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Instagram - Active' />
+        <IconNode icon={<MdError />} text='No' />
       ),
     },
-    position: { x: 800, y: 500 },
+    position: { x: 1100, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-12',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Bigbasket - Active' />
+        <IconNode icon={<RiSpam3Fill />} text='3/10' />
       ),
     },
-    position: { x: 1000, y: 500 },
+    position: { x: 1300, y: 500 },
     parentNode: 'A',
-  },
-  {
-    id: 'A-13',
-    data: {
-      label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Amazon - Active' />
-      ),
-    },
-    position: { x: 1200, y: 500 },
-    parentNode: 'A',
-  },
+  }
 ];
 
 export const usernameNodes = [
   {
     id: 'A',
     type: 'input',
-    data: { label: 'Parent Node 1' },
-    position: { x: 500, y: 0 },
+    data: {
+      label: <IconNode icon={<BiUserCircle />} text={vishalUserName} />,
+    },
+    position: { x: 0, y: 0 },
   },
   {
     id: 'A-1',
-    data: { label: 'Child Node 1' },
-    position: { x: 0, y: 90 },
+    data: {
+      label: (
+        <IconNode
+          icon={<FaMobileAlt />}
+          text='UPI ID'
+          description={`
+          ${vishalNum}@axl
+          ${vishalNum}@ibl
+          ${vishalNum}@ybl
+          `}
+        />
+      ),
+    },
+    position: { x: 0, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-2',
-    data: { label: 'Child Node 2' },
-    position: { x: 200, y: 90 },
+    data: {
+      label: <IconNode icon={<FaAddressBook />} text='Name : Vishal ML KCT' />,
+    },
+    position: { x: 200, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-3',
-    data: { label: 'Child Node 3' },
-    position: { x: 400, y: 90 },
+    data: {
+      label: <IconNode icon={<TbSocial />} text='Social Media' />,
+    },
+    position: { x: 500, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-4',
-    data: { label: 'Child Node 4' },
-    FaMobileAlt,
+    data: {
+      label: <IconNode 
+        icon={<BsDatabaseFillExclamation />} 
+        text="Data Breach"
+        description="Number Found"/>,
+    },
+    position: { x: 850, y: 250 },
+    parentNode: 'A',
   },
   {
     id: 'A-5',
-    data: { label: 'Child Node 5' },
-    position: { x: 800, y: 90 },
+    data: {
+      label: (
+        <IconNode icon={<BsBank />} 
+        text="Banking Name"
+        description="Vishal M L"/>
+      ),
+    },
+    position: { x: 0, y: 500 },
     parentNode: 'A',
   },
+  {
+    id: 'A-6',
+    data: {
+      label: (
+        <IconNode
+          icon={<FaLinkedin />}
+          text='Username Active'
+          description='linkedin.com'
+        />
+      ),
+    },
+    position: { x: 250, y: 500 },
+    parentNode: 'A',
+  },
+  {
+    id: 'A-7',
+    data: {
+      label: (
+        <IconNode
+          icon={<SiBigbasket />}
+          text='Username Active'
+          description='bigbasket.com'
+        />
+      ),
+    },
+    position: { x: 450, y: 500 },
+    parentNode: 'A',
+  },
+  {
+    id: 'A-8',
+    data: {
+      label: (
+        <IconNode icon={<PiMediumLogoFill />} text='Username Active' description='medium.com'/>
+      ),
+    },
+    position: { x: 650, y: 500 },
+    parentNode: 'A',
+  },
+  {
+    id: 'A-9',
+    data: {
+      label: (
+        <IconNode icon={<SiBigbasket />} text='2020 Data Breach' />
+      ),
+    },
+    position: { x: 850, y: 500 },
+    parentNode: 'A',
+  }
 ];
+
 export const mobileNodes = [
   {
     id: 'A',
@@ -222,7 +306,7 @@ export const mobileNodes = [
     data: {
       label: <IconNode icon={<FaAddressBook />} text='Name : Vishal ML KCT' />,
     },
-    position: { x: 200, y: 250 },
+    position: { x: 300, y: 250 },
     parentNode: 'A',
   },
   {
@@ -230,7 +314,7 @@ export const mobileNodes = [
     data: {
       label: <IconNode icon={<GiNetworkBars />} text='Airtel' />,
     },
-    position: { x: 400, y: 250 },
+    position: { x: 600, y: 250 },
     parentNode: 'A',
   },
   {
@@ -238,17 +322,17 @@ export const mobileNodes = [
     data: {
       label: <IconNode icon={<TbSocial />} text='User Registered Sites' />,
     },
-    position: { x: 600, y: 250 },
+    position: { x: 1200, y: 250 },
     parentNode: 'A',
   },
   {
     id: 'A-5',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Number Not Found' />
+        <IconNode icon={<CgUnavailable />} text='Number Not Found' />
       ),
     },
-    position: { x: 800, y: 250 },
+    position: { x: 1500, y: 250 },
     parentNode: 'A',
   },
   {
@@ -256,13 +340,13 @@ export const mobileNodes = [
     data: {
       label: (
         <IconNode
-          icon={<TbDatabaseExclamation />}
+          icon={<FaLinkedin />}
           text='Username Found'
           description='linkedin.com'
         />
       ),
     },
-    position: { x: 200, y: 600 },
+    position: { x: 50, y: 500 },
     parentNode: 'A',
   },
   {
@@ -270,13 +354,13 @@ export const mobileNodes = [
     data: {
       label: (
         <IconNode
-          icon={<TbDatabaseExclamation />}
+          icon={<FaReddit />}
           text='Username Found'
           description='reddit.com'
         />
       ),
     },
-    position: { x: 400, y: 600 },
+    position: { x: 250, y: 500 },
     parentNode: 'A',
   },
   {
@@ -284,7 +368,7 @@ export const mobileNodes = [
     data: {
       label: <IconNode icon={<TiTick />} text='Valid' />,
     },
-    position: { x: 600, y: 900 },
+    position: { x: 450, y: 500 },
     parentNode: 'A',
   },
   {
@@ -292,45 +376,45 @@ export const mobileNodes = [
     data: {
       label: <IconNode icon={<BiCurrentLocation />} text='Coimbatore' />,
     },
-    position: { x: 800, y: 900 },
+    position: { x: 650, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-10',
     data: {
-      label: <IconNode icon={<MdNotificationsActive />} text='Active' />,
+      label: <IconNode icon={<VscCompassActive />} text='Active' />,
     },
-    position: { x: 1000, y: 900 },
+    position: { x: 850, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-11',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Instagram - Active' />
+        <IconNode icon={<FaInstagram />} text='Instagram - Active' />
       ),
     },
-    position: { x: 800, y: 500 },
+    position: { x: 1050, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-12',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Bigbasket - Active' />
+        <IconNode icon={<SiBigbasket />} text='Bigbasket - Active' />
       ),
     },
-    position: { x: 1000, y: 500 },
+    position: { x: 1250, y: 500 },
     parentNode: 'A',
   },
   {
     id: 'A-13',
     data: {
       label: (
-        <IconNode icon={<TbDatabaseExclamation />} text='Amazon - Active' />
+        <IconNode icon={<FaAmazon />} text='Amazon - Active' />
       ),
     },
-    position: { x: 1200, y: 500 },
+    position: { x: 1450, y: 500 },
     parentNode: 'A',
   },
 ];
