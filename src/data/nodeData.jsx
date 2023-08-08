@@ -1,20 +1,29 @@
 import { BiUserCircle, BiCurrentLocation } from 'react-icons/bi';
-import { BsDatabaseFillExclamation, BsBank } from "react-icons/bs";
-import { FaMobileAlt, FaAddressBook, FaLinkedin, FaReddit, FaInstagram, FaAmazon, FaFacebookSquare, FaMedium } from 'react-icons/fa';
+import { BsDatabaseFillExclamation, BsBank } from 'react-icons/bs';
+import {
+  FaMobileAlt,
+  FaAddressBook,
+  FaLinkedin,
+  FaReddit,
+  FaInstagram,
+  FaAmazon,
+  FaFacebookSquare,
+  FaMedium,
+} from 'react-icons/fa';
 import { MdNotificationsActive, MdError } from 'react-icons/md';
 import { PiMediumLogoFill } from 'react-icons/pi';
 import { SiBigbasket } from 'react-icons/si';
-import { RiSpam3Fill } from "react-icons/ri";
-import { VscCompassActive } from "react-icons/vsc";
-import { CgUnavailable } from "react-icons/cg";
+import { RiSpam3Fill } from 'react-icons/ri';
+import { VscCompassActive } from 'react-icons/vsc';
+import { CgUnavailable } from 'react-icons/cg';
 import { GiNetworkBars } from 'react-icons/gi';
 import { TbSocial, TbMailExclamation, TbMailCancel } from 'react-icons/tb';
 import { TiTick } from 'react-icons/ti';
 
 import IconNode from '../components/IconNode';
 const vishalNum = 9952802556;
-const vishalMail = "vishal@gmail.com";
-const vishalUserName = "mr.g0d"
+const vishalMail = 'vishal@gmail.com';
+const vishalUserName = 'mr.g0d';
 
 export const emailNodes = [
   {
@@ -62,10 +71,13 @@ export const emailNodes = [
   {
     id: 'A-4',
     data: {
-      label: <IconNode 
-        icon={<BsDatabaseFillExclamation />} 
-        text={`Data Breach
-               Number Found`} />,
+      label: (
+        <IconNode
+          icon={<BsDatabaseFillExclamation />}
+          text={`Data Breach
+               Number Found`}
+        />
+      ),
     },
     position: { x: 900, y: 250 },
     parentNode: 'A',
@@ -73,11 +85,9 @@ export const emailNodes = [
   {
     id: 'A-5',
     data: {
-      label: (
-        <IconNode icon={<TbMailExclamation />} text='Blacklisted Mail' />
-      ),
+      label: <IconNode icon={<TbMailExclamation />} text='Blacklisted Mail' />,
     },
-    position: { x:1100, y: 250 },
+    position: { x: 1100, y: 250 },
     parentNode: 'A',
   },
   {
@@ -120,7 +130,11 @@ export const emailNodes = [
     id: 'A-9',
     data: {
       label: (
-        <IconNode icon={<FaFacebookSquare />} text='Username - Active' description="facebook.com"/>
+        <IconNode
+          icon={<FaFacebookSquare />}
+          text='Username - Active'
+          description='facebook.com'
+        />
       ),
     },
     position: { x: 700, y: 500 },
@@ -129,9 +143,7 @@ export const emailNodes = [
   {
     id: 'A-10',
     data: {
-      label: (
-        <IconNode icon={<SiBigbasket />} text='2020 Data Breach' />
-      ),
+      label: <IconNode icon={<SiBigbasket />} text='2020 Data Breach' />,
     },
     position: { x: 900, y: 500 },
     parentNode: 'A',
@@ -139,9 +151,7 @@ export const emailNodes = [
   {
     id: 'A-11',
     data: {
-      label: (
-        <IconNode icon={<MdError />} text='No' />
-      ),
+      label: <IconNode icon={<MdError />} text='No' />,
     },
     position: { x: 1100, y: 500 },
     parentNode: 'A',
@@ -149,13 +159,11 @@ export const emailNodes = [
   {
     id: 'A-12',
     data: {
-      label: (
-        <IconNode icon={<RiSpam3Fill />} text='3/10' />
-      ),
+      label: <IconNode icon={<RiSpam3Fill />} text='3/10' />,
     },
     position: { x: 1300, y: 500 },
     parentNode: 'A',
-  }
+  },
 ];
 
 export const usernameNodes = [
@@ -204,10 +212,13 @@ export const usernameNodes = [
   {
     id: 'A-4',
     data: {
-      label: <IconNode 
-        icon={<BsDatabaseFillExclamation />} 
-        text="Data Breach"
-        description="Number Found"/>,
+      label: (
+        <IconNode
+          icon={<BsDatabaseFillExclamation />}
+          text='Data Breach'
+          description='Number Found'
+        />
+      ),
     },
     position: { x: 850, y: 250 },
     parentNode: 'A',
@@ -216,9 +227,11 @@ export const usernameNodes = [
     id: 'A-5',
     data: {
       label: (
-        <IconNode icon={<BsBank />} 
-        text="Banking Name"
-        description="Vishal M L"/>
+        <IconNode
+          icon={<BsBank />}
+          text='Banking Name'
+          description='Vishal M L'
+        />
       ),
     },
     position: { x: 0, y: 500 },
@@ -256,7 +269,11 @@ export const usernameNodes = [
     id: 'A-8',
     data: {
       label: (
-        <IconNode icon={<PiMediumLogoFill />} text='Username Active' description='medium.com'/>
+        <IconNode
+          icon={<PiMediumLogoFill />}
+          text='Username Active'
+          description='medium.com'
+        />
       ),
     },
     position: { x: 650, y: 500 },
@@ -265,13 +282,11 @@ export const usernameNodes = [
   {
     id: 'A-9',
     data: {
-      label: (
-        <IconNode icon={<SiBigbasket />} text='2020 Data Breach' />
-      ),
+      label: <IconNode icon={<SiBigbasket />} text='2020 Data Breach' />,
     },
     position: { x: 850, y: 500 },
     parentNode: 'A',
-  }
+  },
 ];
 
 export const mobileNodes = [
@@ -328,9 +343,7 @@ export const mobileNodes = [
   {
     id: 'A-5',
     data: {
-      label: (
-        <IconNode icon={<CgUnavailable />} text='Number Not Found' />
-      ),
+      label: <IconNode icon={<CgUnavailable />} text='Number Not Found' />,
     },
     position: { x: 1500, y: 250 },
     parentNode: 'A',
@@ -390,9 +403,7 @@ export const mobileNodes = [
   {
     id: 'A-11',
     data: {
-      label: (
-        <IconNode icon={<FaInstagram />} text='Instagram - Active' />
-      ),
+      label: <IconNode icon={<FaInstagram />} text='Instagram - Active' />,
     },
     position: { x: 1050, y: 500 },
     parentNode: 'A',
@@ -400,9 +411,7 @@ export const mobileNodes = [
   {
     id: 'A-12',
     data: {
-      label: (
-        <IconNode icon={<SiBigbasket />} text='Bigbasket - Active' />
-      ),
+      label: <IconNode icon={<SiBigbasket />} text='Bigbasket - Active' />,
     },
     position: { x: 1250, y: 500 },
     parentNode: 'A',
@@ -410,9 +419,7 @@ export const mobileNodes = [
   {
     id: 'A-13',
     data: {
-      label: (
-        <IconNode icon={<FaAmazon />} text='Amazon - Active' />
-      ),
+      label: <IconNode icon={<FaAmazon />} text='Amazon - Active' />,
     },
     position: { x: 1450, y: 500 },
     parentNode: 'A',

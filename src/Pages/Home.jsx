@@ -1,10 +1,23 @@
 import React from 'react';
 import Results from './Results';
+import { useRef } from 'react';
+import { useState } from 'react';
 
 const Home = () => {
+  const formRef = useRef(null);
+  const [results, setResults] = useState(false);
+  const sumbitHandler = (e) => {
+    e.preventDefault();
+    const form = new FormData(formRef.current);
+    let formDataObj = {};
+    for (const [key, value] of form) {
+      formDataObj[key] = value ? true : false;
+    }
+    setResults(formDataObj);
+  };
   return (
     <section id='form'>
-      <form>
+      <form ref={formRef} onSubmit={(e) => sumbitHandler(e)}>
         <h2></h2>
         <label htmlFor='email'>Email :</label>
         <input
@@ -32,13 +45,7 @@ const Home = () => {
         <input type='submit' value='Investigate 🔍' />
       </form>
 
-      <Results
-        results={{
-          email: true,
-          mobile: true,
-          username: true,
-        }}
-      />
+      <Results results={results} />
     </section>
   );
 };
